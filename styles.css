@@ -1,0 +1,251 @@
+
+
+
+.body{
+    background-color: #ff1414;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.column-1{
+    width: 50%;
+}
+/*------------------------------- header ----------------------------------------------*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+  
+}
+.header__cont-img{
+    display: flex;
+    justify-content: center;
+}
+.header__cont-img-png{
+    width: 60%;
+}
+.header__cont{
+    border: 5px solid #000;
+    background-color: black;
+    width: 80%;
+    margin: 0 auto;
+}
+.header__cont-ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+.header__cont-ul-li{
+    display: inline-block;
+    margin: 1px;
+    padding:2px ;    
+}
+.header__cont-ul-li a{
+    text-decoration: none;
+    padding: 5PX;
+    font-size: 1.5rem;
+    font-weight: 10rem;
+    color: #fff;
+    display: block;
+}
+.header__cont-ul-li a:hover{
+    color:gray;
+}
+/* --------------------------seccion peliculas----------------------- */
+.peliculas{
+    width:90%;
+    /* border: 5px solid #000; */
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+.peliculas__cont-img{
+    width: 100%;
+}
+.peliculas__cont-imgpeli{
+    width: 100%;
+    
+}
+.peliculas__img{
+    width: 95%;    
+}
+.peliculas__cont{
+    width: 90%;
+}
+.peliculas__cont-imgtext{
+    margin-top:1rem ;
+    width: 100%;
+}
+.card-peli{
+    width: 90%;
+    background-color: #000;
+    
+    padding: .1rem 1rem;
+    margin: 10px 0px;
+    color: #fff;
+    border-radius: 14px;
+    font-size: 1.3rem;
+}
+.card-peli:hover{
+    background-color: #092327;
+}
+/* ---------------------------------Creadores--------------------------- */
+.column-2{
+    width: 50%;
+}
+
+.kreator{
+    background-color: #e31818;
+    width:100%;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    z-index:-2;
+    
+}
+.kreator__content-card{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.kreator__title{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    width: 80%;
+    
+}
+.kreator__title-img{
+    width:100%;    ;
+}
+.kreator__card-1{
+    width: 20rem;
+    background-color: #e31818;
+    border-radius:35px;
+    position:relative;
+}
+.kreator__card-1::after{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    z-index: -1;
+}
+.kreator__card-1-h{
+    margin: 0%;
+    margin-left: 1rem;
+    font-size: 20px;
+    font-family: roboto;
+}
+.kreator__card-1-p{
+    margin:.8rem;
+    margin-left: 2rem;
+    font-size: 20px;
+    font-family: roboto;
+    width: 80%;
+    color: #fff;
+
+}
+.kreator__card-1-png{
+    width:100%;
+}
+.kreator__card-2{
+    width: 20rem;
+    background-color: #e31818;
+    border-radius:35px;
+    position:relative;
+}
+.kreator__card-2::after{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    z-index: -1;
+}
+.kreator__card-2-h{
+    margin: 0%;
+    margin-left: 1rem;
+    font-size: 20px;
+    font-family: roboto;
+}
+.kreator__card-2-p{
+    margin:.8rem;
+    margin-left: 2rem;
+    font-size: 20px;
+    font-family: roboto;
+    width: 80%;
+    color: #fff;
+}
+.kreator__card-2-png{
+    width:100%;
+}
+
+/*------------------------------------ descripcion------------------------ */
+.description{
+    background-color: #e31818;
+    width: 100%;
+    margin-top: 3rem;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+.desciption-img{
+    text-align: center;
+    width: 80%;
+}
+.description-img-png{
+    width: 100%;
+}
+.desciption__card-1{
+    display: flex;
+}
+
+.desciption__card-2{
+    display: flex;
+    height: 50%;
+}
+.desciption__card-1-img{
+    width: 400px;
+}
+.desciption__card-1-p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.desciption__card-2-p{
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    align-content: center;
+}
+/*-------------------------------------responxisve-------------------------------- */
+@media screen and (max-width:950px){
+    .main{
+         flex-direction:column;
+    }
+   .column-2{
+       width: 80%;
+       margin: 0 auto;
+   }
+   .column-1{
+    width: 80%;
+    margin: 0 auto;
+}
+   
+
+}
